@@ -23,12 +23,12 @@ public class QueueCommand extends BaseCommand {
 
     @Override
     public String getName() {
-        return "queue";
+        return "joinqueue";
     }
 
     @Override
     public ImmutableList<String> getAliases() {
-        List<String> aliases = new ArrayList<>(Arrays.asList("move", "joinqueue", "joinq"));
+        List<String> aliases = new ArrayList<>(Arrays.asList("move", "joinq"));
         if(main.getConfig().getBoolean("enable-server-command")) {
             aliases.add("server");
         }
